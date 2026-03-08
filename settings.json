@@ -1,0 +1,47 @@
+
+{
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before":["i"],
+            "after":["a"]
+        },
+
+        {
+          "before":["a"],
+            "after":["i"]
+        },
+
+        {
+          "before":["I"],
+            "after":["A"]
+        },
+        
+        {
+          "before":["A"],
+            "after":["I"]
+        },
+        {
+          "before":["^"],
+            "after":["$"]
+        },
+        
+        {
+          "before":["$"],
+            "after":["^"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+          "before":["^"],
+            "after":["$"]
+        },
+        
+        {
+          "before":["$"],
+            "after":["^"]
+        }
+
+    ],
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false
+  }
