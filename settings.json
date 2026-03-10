@@ -44,4 +44,15 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false
+
+    {
+  "editor.quickSuggestions": false,
+  // "editor.suggestOnTriggerCharacters": false,
+  "editor.inlineSuggest.enabled": false,
+  // "editor.wordBasedSuggestions": "off",
+  // "github.copilot.enable": false
+  // "editor.parameterHints.enabled": false,
+  // "editor.snippetSuggestions": "none",
+  // "editor.acceptSuggestionOnEnter": "off"
+}
   }
