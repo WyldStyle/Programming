@@ -1,7 +1,7 @@
 function mergeSort(arr:Array){
-    if (arr.length < 2) return; //arr.length == 1;
+    if (arr.length < 2) return arr; //arr.length == 1;
     let mid = arr.length >> 1; 
-    return merge (mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(mid)));
+  return merge(mergeSort(arr.slice(0,mid)), mergeSort(arr.slice(mid)))
 }
 
 function merge(leftA:Array, rightA:Array){
@@ -10,6 +10,7 @@ function merge(leftA:Array, rightA:Array){
         leftA[leftIdx] < rightA[rightIdx] ? 
         mergedArr.push(leftA[leftIdx++]):
         mergedArr.push(rightA[rightIdx++]);
+       //it pushes the element and then increment the indexes. 
     }
     let remLeft = leftA.slice(leftIdx),
     remRight = rightA.slice(rightIdx);
