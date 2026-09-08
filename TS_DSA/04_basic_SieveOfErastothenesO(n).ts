@@ -63,7 +63,8 @@ function sieveOfErasto1(a:number){
     else if (a < 3) return [2];
     else if(a < 5) return [2,3];
     else{
-primeArr[4] = false; console.log(2,"\n",3);
+        primeArr[4] = false; 
+        console.log(2); console.log(3);
     for(let i = 5; i <=a; i+=6){
         // console.log(i, i+2);
         // console.log(primeArr[i],primeArr[i+2]);
@@ -74,6 +75,15 @@ primeArr[4] = false; console.log(2,"\n",3);
         for(let j = i+2; j<=a; j+=i+2){primeArr[j] = false};
         }
     }
+        console.log(primeArr);
+    }
+}
+
+function sieveOfErasto2(a:number){
+    let primeArr: boolean[] = new Array (a+1).fill(true);
+    let 
+    for (let i = 2; i <= primeArr.length; i++){
+        if (prime   )
     }
 }
 
@@ -81,9 +91,12 @@ function main (n:number){
 // console.log(countPrimesUptoN(n));
 // console.log(checkPrimeNo1(25));
 // console.log(sieveOfErasto(n));
-console.log(sieveOfErasto1(n));
+// console.log(sieveOfErasto1(n));
+console.log(sieveOfErasto2(n));
+
 
 
 
 }
-main(100);
+main(8)
+// main(100);
