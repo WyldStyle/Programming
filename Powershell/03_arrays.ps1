@@ -45,7 +45,9 @@ $myArrList.Count
 ### Time calc
 $myArr2 = @()
 #Measure-Command -Expression{@(0..50000).ForEach({$myArr2+=($_)})} #18seconds
+
 $myArrList2 = New-Object -TypeName System.Collections.ArrayList
 Measure-Command -Expression{@(0..50000).ForEach({$myArrList2.Add($_)})} # 0.65seconds
+#   fastest
 $myArrList3 = New-Object -TypeName System.Collections.ArrayList
 Measure-Command -Expression{$myArrList3.AddRange(@(0..50000))} # 0.09seconds
