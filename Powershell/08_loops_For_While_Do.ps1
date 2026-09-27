@@ -44,16 +44,42 @@ foreach($item in $testArray){
 # }
 #   See in the above program the output of $a+$b = 22 because Read -Prompt store input as text
 
-while($true){
-    Write-Output "Welcome User";
-    Write-Output "Enter q to quit"
-    Write-Output "Enter two numbers"
+# while($true){
+#     Write-Output "Welcome User";
+#     Write-Output "Enter q to quit"
+#     Write-Output "Enter two numbers"
 
-    $a = [int] (Read-Host -Prompt "Enter 1st no")
-        if ($a -eq "q"){break;}
-    $b =[int] (Read-Host -Prompt "Enter 2nd no")
-         # Write-Output The sum is $($a+$b)
-    # Write-Output "the sum is $($a + $b)"
-    Write-Output "The sum is $($a+$b)"
-    Write-Output ###############
+#     $a = [int] (Read-Host -Prompt "Enter 1st no")
+#         if ($a -eq "q"){break;}
+#     $b =[int] (Read-Host -Prompt "Enter 2nd no")
+#          # Write-Output The sum is $($a+$b)
+#     # Write-Output "the sum is $($a + $b)"
+#     Write-Output "The sum is $($a+$b)"
+# }
+
+Write-Output "Welcome to Parrot"
+Write-Output "Enter q to quit"
+$input = Read-Host -Prompt "Say what you wanna say"
+while($input -ne "q"){
+    Write-Output "You entered : $input"
+$input = Read-Host -Prompt "Say what you wanna say"
 }
+
+
+do{
+$input = Read-Host -Prompt "Say what you wanna say Now DO"
+    Write-Output "You entered : $input"
+}while ($input -ne 'q')
+
+# #infiniteloop
+do{
+    Write-Output 'Hi'
+}while($true)
+# do{
+#     write-Output 'Hi'
+# }until($false)
+
+do{
+$input = Read-Host -Prompt "Say what you wanna say Now DO Until"
+    Write-Output "You entered : $input"
+}until ($input -eq 'q')
